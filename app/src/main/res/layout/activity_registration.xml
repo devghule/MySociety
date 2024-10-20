@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/login_background"></ImageView>
+    <ImageView
+        android:id="@+id/society"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mysociety_img"
+        />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Here "
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        ></TextView>
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/txt1"-->
+<!--            android:text="Full Name:"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:padding="10dp"-->
+<!--            ></TextView>-->
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:hint="Enter your full name"
+            android:layout_marginTop="80dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            ></EditText>
+<!--    <TextView-->
+<!--        android:id="@+id/txt3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email ID / Username:"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_below="@+id/txt2"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--      -->
+<!--        ></TextView>-->
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e1"
+        android:hint="Enter Email Address"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        ></EditText>
+<!--        <TextView-->
+<!--            android:id="@+id/txt4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Contact  No:"-->
+<!--            android:layout_below="@+id/e2"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="20dp"-->
+<!--            ></TextView>-->
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e2"
+            android:hint="enter your contact number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            ></EditText>
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Flat No:"-->
+<!--            android:layout_below="@+id/e3"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="20dp"-->
+<!--            ></TextView>-->
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e3"
+            android:hint="enter your flat no:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            ></EditText>
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt6"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Building wing:"-->
+    <!--        android:layout_below="@+id/e4"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:textSize="20dp"-->
+    <!--        ></TextView>-->
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4"
+            android:hint="enter your  wing no:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            ></EditText>
+<!--    <TextView-->
+<!--        android:id="@+id/txt3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Password:"-->
+<!--        android:textSize="25dp"-->
+<!--        android:layout_below="@+id/e1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        ></TextView>-->
+    <EditText
+        android:id="@+id/e6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e5"
+        android:hint="Enter your  Password :"
+        android:inputType="textPassword"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        ></EditText>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/e6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        ></Button>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Here"
+        android:layout_below="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        style="@style/MyButtonStyle"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        ></Button>
+</RelativeLayout>

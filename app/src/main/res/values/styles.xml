@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyButtonStyle">
+        <!-- Set the background color to your desired color -->
+        <item name="android:background">@color/my_button_color</item>
+        <!-- Remove any border or padding -->
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+</resources>

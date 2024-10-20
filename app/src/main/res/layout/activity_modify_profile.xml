@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyProfileActivity">
+
+    <TextView
+        android:id="@+id/text_modify_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify Profile"
+        android:textSize="35dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edModifiedUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modified Username"
+        android:layout_below="@+id/text_modify_profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/edModifiedContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modified Contact"
+        android:layout_below="@+id/edModifiedUsername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edModifiedFlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modified Flat No"
+        android:layout_below="@+id/edModifiedContact"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edModifiedWing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modified Wing No"
+        android:layout_below="@+id/edModifiedFlat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_below="@+id/edModifiedWing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

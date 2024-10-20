@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_managecomplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/viewall_complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ComplaintsBox"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+    <Button
+        android:id="@+id/viewcomplaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all Complaints"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/viewall_complaints"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        ></Button>
+    <TextView
+        android:id="@+id/view_complaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/viewcomplaints"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        ></TextView>
+</RelativeLayout>

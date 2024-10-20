@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="@string/menu_account" />
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/view_users"
+            android:title="@string/menu_users" />
+        <item
+            android:id="@+id/nav_meetup"
+            android:icon="@drawable/baseline_notification_add_24"
+            android:title="@string/menu_meetup" />
+        <item
+            android:id="@+id/nav_application"
+            android:icon="@drawable/baseline_file_download_24"
+            android:title="@string/menu_application" />
+        <item
+            android:id="@+id/nav_managecomplaints"
+            android:icon="@drawable/baseline_report_problem_24"
+            android:title="@string/menu_managecomplaints" />
+        <item
+            android:id="@+id/nav_managemaintainance"
+            android:icon="@drawable/baseline_currency_rupee_24"
+            android:title="@string/menu_managemaintainance" />
+        <item
+            android:id="@+id/nav_viewfeedback"
+            android:icon="@drawable/baseline_feedback_24"
+            android:title="@string/menu_viewfeedback" />
+
+
+    </group>
+</menu>

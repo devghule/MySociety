@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.complaints.complaintsViewModel">
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_Complaints"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/application"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="25dp"
+        android:layout_below="@+id/application"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        ></TextView>
+    <EditText
+        android:id="@+id/ediname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/application"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        ></EditText>
+    <TextView
+        android:id="@+id/flat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat No: "
+        android:textSize="25dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/ediflat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ediname"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:hint="e.g.101"
+        android:textSize="20dp"
+        ></EditText>
+    <TextView
+        android:id="@+id/complaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Complaint: "
+        android:layout_below="@+id/flat"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"></TextView>
+    >
+    <EditText
+        android:id="@+id/edcomplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Complaint Here.."
+        android:textSize="20dp"
+        android:layout_below="@+id/ediflat"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="140dp"
+
+        ></EditText>
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaint"
+        android:text="submit"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"></Button>
+
+    <Button
+        android:id="@+id/uploadfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaint"
+        android:text="upload File"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="250dp"></Button>
+    <Button
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadfile"
+        android:text="Email"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="150dp"></Button>
+</RelativeLayout>

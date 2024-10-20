@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MySociety</string>
+    <string name="title_activity_userhomescreen">userhomescreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Sakshi Sawant</string>
+    <string name="nav_header_subtitle">sakshisawantj@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_Profile">Profile</string>
+    <string name="menu_Complaints">Complaints</string>
+    <string name="menu_bookfacility">Book Facility</string>
+    <string name="menu_Maintanance">Maintanance</string>
+    <string name="menu_Notification">Notification</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_users">Users</string>
+    <string name="menu_meetup">MeetUp</string>
+    <string name="menu_application">Applications</string>
+    <string name="menu_managecomplaints">Manage Complaints</string>
+    <string name="menu_managemaintainance">Manage Maintanance</string>
+    <string name="menu_viewfeedback">View Feedback</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="default_web_client_id">67878103314-i1gn8dl7r77cbclhcnpn50kr0lnb4chs.apps.googleusercontent.com</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/image_view"
+    android:layout_below="@+id/about"
+    ></ImageView>
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Welcome to MySociety"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@color/Indigo"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="          Welcome to our society a place where community spirit thrives! Our society is more than just a collection of homes; it's a close-knit family that values connection, collaboration, and camaraderie. With a commitment to creating a safe and enjoyable living space, we organize various events, activities, and initiatives that bring residents together. Explore the richness of our community, engage in the activities, and be a part of the positive energy that defines life here at mysociety.
+ "
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineBreakWordStyle="phrase"
+
+        ></TextView>
+    <ImageView
+        android:id="@+id/society"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/mysociety_img"
+         android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        ></ImageView>
+
+
+</RelativeLayout>

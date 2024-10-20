@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mysociety.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.mysociety.ui.account.admin_accountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_admin_account" />
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.example.mysociety.ui.users.usersFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_users" />
+    <fragment
+        android:id="@+id/nav_meetup"
+        android:name="com.example.mysociety.ui.meetup.meetupFragment"
+        android:label="@string/menu_meetup"
+        tools:layout="@layout/fragment_meetup" />
+    <fragment
+        android:id="@+id/nav_application"
+        android:name="com.example.mysociety.ui.application.applicationFragment"
+        android:label="@string/menu_application"
+        tools:layout="@layout/fragment_application" />
+    <fragment
+        android:id="@+id/nav_managecomplaints"
+        android:name="com.example.mysociety.ui.manage_complaints.manage_complaintsFragment"
+        android:label="@string/menu_managecomplaints"
+        tools:layout="@layout/fragment_manage_complaints" />
+    <fragment
+        android:id="@+id/nav_managemaintainance"
+        android:name="com.example.mysociety.ui.manage_maintainance.manage_maintainanceFragment"
+        android:label="@string/menu_managemaintainance"
+        tools:layout="@layout/fragment_manage_maintainance" />
+    <fragment
+        android:id="@+id/nav_viewfeedback"
+        android:name="com.example.mysociety.ui.view_feedback.viewfeedbackFragment"
+        android:label="@string/menu_viewfeedback"
+        tools:layout="@layout/fragment_viewfeedback" />
+</navigation>

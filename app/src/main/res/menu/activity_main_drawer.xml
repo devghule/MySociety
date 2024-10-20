@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/baseline_report_problem_24"
+            android:title="Complaints" />
+        <item
+            android:id="@+id/nav_bookfacility"
+            android:icon="@drawable/baseline_send_24"
+            android:title="Bookfacility" />
+        <item
+            android:id="@+id/nav_maintanance"
+            android:icon="@drawable/baseline_currency_rupee_24"
+            android:title="maintanance" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/baseline_notifications_active_24"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/baseline_feedback_24"
+            android:title="Feedback" />
+
+
+    </group>
+</menu>
