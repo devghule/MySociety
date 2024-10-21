@@ -160,4 +160,15 @@
         android:layout_marginRight="15dp"
         android:text="Google Sign-In" />
 
+    <Spinner
+        android:id="@+id/user_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/user_type_options"
+        android:spinnerMode="dropdown"
+        android:padding="10dp"
+        />
+
+
 </RelativeLayout>

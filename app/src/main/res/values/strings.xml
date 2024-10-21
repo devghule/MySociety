@@ -7,7 +7,10 @@
     <string name="nav_header_subtitle">sakshisawantj@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Logout</string>
-
+    <string-array name="user_type_options">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
     <string name="menu_home">Home</string>
     <string name="menu_Profile">Profile</string>
     <string name="menu_Complaints">Complaints</string>
