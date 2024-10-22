@@ -3,172 +3,135 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/login_background"
+    android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/login_background"></ImageView>
-
-    <ImageView
-        android:id="@+id/imageemail"
-        android:layout_width="80px"
-        android:layout_height="80px"
-        android:src="@drawable/email"
-        android:layout_below="@+id/txt2"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"></ImageView>
-
-    <ImageView
-        android:layout_width="28dp"
-        android:layout_height="52dp"
-        android:layout_below="@+id/txt3"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/key"></ImageView>
-
+    <!-- App Title -->
     <TextView
         android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login Here "
+        android:text="Login Here"
         android:textAlignment="center"
-        android:textSize="40dp"
-        android:layout_marginTop="40dp"
+        android:textSize="32sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        ></TextView>
+        android:layout_marginTop="40dp" />
 
-    <TextView
-        android:id="@+id/txt2"
+    <!-- Username Section -->
+    <LinearLayout
+        android:id="@+id/username_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt1"
-        android:layout_margin="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Username:"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"></TextView>
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-    <EditText
-        android:id="@+id/uname"
+        <!-- Username Icon -->
+        <ImageView
+            android:id="@+id/imageemail"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/email" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Username"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/border" />
+    </LinearLayout>
+
+    <!-- Password Section -->
+    <LinearLayout
+        android:id="@+id/password_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt2"
-        android:hint="Username "
-        android:textSize="25dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="10dp"
-        android:padding="5dp"
-        android:background="@drawable/border"
-        ></EditText>
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password:"
-        android:textSize="25dp"
-        android:layout_below="@+id/uname"
-        android:layout_margin="20dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
+        android:layout_below="@id/username_layout"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-        ></TextView>
-    <EditText
-        android:id="@+id/pass_word"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt3"
-        android:hint="Password"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="20dp"
-        android:textSize="25dp"
-        android:padding="5dp"
-        android:background="@drawable/border"
-        android:inputType="textPassword"
-        ></EditText>
+        <!-- Password Icon -->
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/key" />
 
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/pass_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Password"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/border"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <!-- Forgot Password Button -->
     <Button
         android:id="@+id/forgot_pass"
         style="@style/MyButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pass_word"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="60dp"
-        android:padding="10dp"
+        android:layout_below="@id/password_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
         android:text="Forgot Password"
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textStyle="bold"></Button>
+        android:textColor="@color/black" />
 
+    <!-- Login Button -->
     <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_below="@+id/forgot_pass"
+        android:layout_below="@id/forgot_pass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Login" />
 
-        ></Button>
-
+    <!-- OR Divider -->
     <TextView
         android:id="@+id/txt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-----------------OR-----------------"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:layout_below="@+id/login"
+        android:textSize="18sp"
+        android:layout_below="@id/login"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="16dp" />
 
-
-    <Button
-        android:id="@+id/create_acc"
-        style="@style/MyButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pass_word"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:layout_marginRight="22dp"
-        android:text="Register First"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textStyle="bold"></Button>
-
+    <!-- Google Sign-In Button -->
     <Button
         android:id="@+id/google_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt4"
-        android:layout_marginLeft="135dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
         android:text="Google Sign-In" />
 
-    <Spinner
-        android:id="@+id/user_type_spinner"
-        android:layout_width="match_parent"
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/create_acc"
+        style="@style/MyButtonStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:entries="@array/user_type_options"
-        android:spinnerMode="dropdown"
-        android:padding="10dp"
-        />
-
-
+        android:layout_below="@id/google_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Register First"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 </RelativeLayout>
