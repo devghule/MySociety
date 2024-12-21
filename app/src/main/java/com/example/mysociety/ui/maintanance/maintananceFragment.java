@@ -101,7 +101,7 @@ public class maintananceFragment extends Fragment {
         String Amount = edammount.getText().toString();
 
         if (!Amount.isEmpty() && !Contact.isEmpty()) {
-            String upiId = "9325492236@axl"; // Replace with the actual UPI ID of the receiver
+            String upiId = "devghulejio@ybl"; // Replace with the actual UPI ID of the receiver
             String note = "Maintenance Payment for " + name + " (Flat No: " + Flat_No + ")";
 
             // Construct the UPI link
